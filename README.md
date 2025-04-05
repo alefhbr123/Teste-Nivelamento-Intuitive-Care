@@ -89,7 +89,7 @@ Desenvolver uma interface web que interaja com um servidor em Python para realiz
 
 - Um componente Vue que permite ao usuário realizar buscas textuais e exibe os resultados retornados pela API.
 
-# Instruções para Execução
+# 📦Instruções para Execução
 ## Back-end (Flask)
 ### 1. Instalação das Dependências:
 
