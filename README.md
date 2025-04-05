@@ -13,7 +13,7 @@ Este repositório contém a solução para os testes de nivelamento, divididos e
 ## Objetivo:
 Desenvolver um código em Python (ou Java) que acesse um site do governo, faça download de anexos em formato PDF e compacte esses arquivos em um único arquivo (ZIP).
 
-Principais etapas e decisões:
+### Principais etapas e decisões:
 
 - Acessamos o site da ANS (link) utilizando bibliotecas como requests e BeautifulSoup (ou Selenium, conforme necessidade).
 
@@ -25,7 +25,7 @@ Principais etapas e decisões:
 ## Objetivo:
 Extrair dados da tabela "Rol de Procedimentos e Eventos em Saúde" contida em um PDF (Anexo I), transformá-los em uma estrutura tabular e salvar o resultado em um arquivo CSV compactado.
 
-Principais etapas e decisões:
+### Principais etapas e decisões:
 
 - Utilizamos bibliotecas de extração de dados de PDF, como camelot e tabula-py, para extrair as informações da tabela.
 
@@ -36,7 +36,8 @@ Principais etapas e decisões:
 - O arquivo CSV foi compactado em um arquivo ZIP com o nome "Teste_Álefh.zip".
 
 # 3. 📌Teste de Banco de Dados
-## Objetivo: Estruturar e importar os dados dos arquivos baixados para um banco de dados e realizar análises.
+## Objetivo: 
+Estruturar e importar os dados dos arquivos baixados para um banco de dados e realizar análises.
 
 Banco de Dados: Scripts compatíveis com MySQL 8 ou PostgreSQL (>10.0).
 
@@ -67,7 +68,8 @@ Banco de Dados: Scripts compatíveis com MySQL 8 ou PostgreSQL (>10.0).
 - Quais as 10 operadoras com maiores despesas nessa categoria no último ano.
 
 # 4. 📌Teste de API
-## Objetivo: Desenvolver uma interface web que interaja com um servidor em Python para realizar buscas textuais na lista de cadastros das operadoras.
+## Objetivo: 
+Desenvolver uma interface web que interaja com um servidor em Python para realizar buscas textuais na lista de cadastros das operadoras.
 
 ### 🚀Tecnologias Utilizadas:
 
