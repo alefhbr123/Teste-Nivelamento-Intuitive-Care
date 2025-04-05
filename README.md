@@ -9,7 +9,7 @@ Este repositório contém a solução para os testes de nivelamento, divididos e
 
 - Teste de API
 
-# 1. Teste de Web Scraping
+# 1. 📌Teste de Web Scraping
 ## Objetivo:
 Desenvolver um código em Python (ou Java) que acesse um site do governo, faça download de anexos em formato PDF e compacte esses arquivos em um único arquivo (ZIP).
 
@@ -21,7 +21,7 @@ Principais etapas e decisões:
 
 - Compactamos os PDFs baixados em um arquivo ZIP utilizando a biblioteca zipfile do Python.
 
-# 2. Teste de Transformação de Dados
+# 2. 📌Teste de Transformação de Dados
 ## Objetivo:
 Extrair dados da tabela "Rol de Procedimentos e Eventos em Saúde" contida em um PDF (Anexo I), transformá-los em uma estrutura tabular e salvar o resultado em um arquivo CSV compactado.
 
@@ -35,7 +35,7 @@ Principais etapas e decisões:
 
 - O arquivo CSV foi compactado em um arquivo ZIP com o nome "Teste_Álefh.zip".
 
-# 3. Teste de Banco de Dados
+# 3. 📌Teste de Banco de Dados
 ## Objetivo: Estruturar e importar os dados dos arquivos baixados para um banco de dados e realizar análises.
 
 Banco de Dados: Scripts compatíveis com MySQL 8 ou PostgreSQL (>10.0).
@@ -66,10 +66,10 @@ Banco de Dados: Scripts compatíveis com MySQL 8 ou PostgreSQL (>10.0).
 
 - Quais as 10 operadoras com maiores despesas nessa categoria no último ano.
 
-# 4. Teste de API
+# 4. 📌Teste de API
 ## Objetivo: Desenvolver uma interface web que interaja com um servidor em Python para realizar buscas textuais na lista de cadastros das operadoras.
 
-### Tecnologias Utilizadas:
+### 🚀Tecnologias Utilizadas:
 
 - Back-end: Python com Flask
 
@@ -116,6 +116,18 @@ npm install
 npm run serve
 ```
 Integre o componente de busca conforme o exemplo em Search.vue.
+
+## 🏗Estrutura do Projeto
+```text
+├── README.md                 # Este arquivo: documentação e descrição do projeto.
+├── Relatorio_cadop.csv       # CSV gerado (relatório) com os dados processados.
+├── Teste API                 # Pasta contendo os arquivos relacionados ao teste de API.
+│   ├── Search.vue            # Componente Vue.js para realizar buscas na API.
+│   └── server.py             # Servidor Python (Flask/FastAPI) que expõe os endpoints da API.
+├── Teste_BD.sql              # Scripts SQL para criação de tabelas, importação dos CSVs e execução de queries analíticas.
+├── teste_transfDados.py      # Script Python para extração e transformação de dados a partir dos PDFs (e geração do CSV).
+└── teste_webscraping.py      # Script Python para realização do web scraping do site da ANS.
+```
 
 # Considerações Finais
 Este projeto demonstrou a integração de diversas tecnologias e técnicas para a resolução de desafios práticos em web scraping, transformação de dados, manipulação de banco de dados e desenvolvimento de APIs. Ao longo do desenvolvimento, foram superados desafios como a extração de dados de PDFs complexos, a padronização de dados com encoding diferente e a construção de queries analíticas para extrair informações relevantes dos dados contábeis e cadastrais.
